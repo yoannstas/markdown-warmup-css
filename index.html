@@ -1,107 +1,163 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:height="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
     <title>Markdown to HTML</title>
     <style>
-        body {background-image: linear-gradient(#A6FFF5,yellow,deeppink)}
-        h1   {
-            color: deeppink;
-            font-family: arial,helvetica;
-            font-size: 500%
+        .header {
+            background-image: url("https://i.ibb.co/nCwYNp6/picture.png");
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            width: 1000px;
+            padding: 40px;
+            text-align: center;
+            color: white;
+            font-size: 30px;
+            font-family: times;
+            margin-left: auto;
+            margin-right: auto;
         }
-        h2   {
-            color: #29403D;
-            font-family: arial,helvetica;
-            font-size: 200%;
-            border-style: dotted
+        .intro {
+            width: 1000px;
+            padding: 20px;
+            transform: rotate(8deg);
+            text-align: center;
+            background: gold;
+            color: midnightblue;
+            font-family: georgia;
+            margin-left: auto;
+            margin-right: auto;
         }
-        h5   {
-            color: #29403D;
-            font-family: arial,helvetica;
-            font-size: 200%;
+        .table {
+            padding: 20px;
+            width: 700px;
+            border: 50px;
+            transform: rotate(-10deg);
+            text-align: center;
+            background: navy;
+            margin-left: auto;
+            margin-right: 300px;
+            color: lightpink;
+            position: relative; top: -60px;
+            font-family: Palatino Linotype;
         }
-        p    {
-            color: #29403D;
-            font-family: arial,helvetica;
+        .text {
+            padding: 20px;
+            background: gold;
+            width: 800px;
+            transform: rotate(6deg);
+            text-align: center;
+            color: navy;
+            font-family: Palatino Linotype;
+            margin-left: auto;
+            margin-right: auto;
         }
-        table {
-            border: 5px solid black;
-            color: #29403D;
-            font-family: arial,helvetica;
-            padding: 10px;
+        .grid-container {
+            background: lightpink;
+            border-radius: 300px;
+            text-align: left;
+            color: midnightblue;
+            font-family: Palatino Linotype;
+            margin-left: auto;
+            margin-right: auto;
+            display: grid;
+            padding: 60px;
+            width: 800px;
+            font-size: 20px;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 0px;
         }
-        ul {
-            color: #29403D;
-            font-family: arial,helvetica;
+        .links {
+            padding: 20px;
+            width: 300px;
+            background: lightpink;
+            text-align: center;
+            color: midnightblue;
+            font-family: Arial, helvetica;
+            margin-left: auto;
+            margin-right: auto;
         }
     </style>
 </head>
+
 <body>
-<h1>
-    Yoann Stas
-</h1>
-<i>
-    "Train insane or remain the same"
-</i>
+<div class="header">
+    <img src="https://i.ibb.co/rw8j9dS/g438.png" alt="logo" width="300" height="90" >
+    <h6> "Train insane or remain the same"</h6>
+</div>
 
-<h2> 35 Years old Graphic Designer & Art Director from Brussels trying to learn coding at becode.org
-</h2>
+<div class="intro">
+    <h2><i>35 Years old Graphic Designer & Art Director from Brussels trying to </br> learn coding at becode.org</i></h2>
+</div>
 
-<img src="32147504_10156394731763910_1223547044879138816_o.jpg" alt="Picture of Yoann" width="500" height="500">
-<table>
-    <tr>
-        <th>Birthday</th>
-        <th>Gender</th>
-        <th>Favourite colour</th>
-        <th>Favourite colour</th>
-        <th>Pineapple on pizza</th>
-    </tr>
-    <tr>
-        <td>12/02</td>
-        <td>Male</td>
-        <td>Royal Blue</td>
-        <td>Italian</td>
-        <td>No Way</td>
-    </tr>
-</table>
+<div class="grid-container">
 
-<h2>Hobbies</h2>
-<ul>
-    <li>Music
-    <ul>
-        <li>Italo</li>
-        <li>Balearic Beats</li>
-        <li>80's</li>
-        <li>Deephouse</li>
-    </ul>
-    </li>
-    <li>Politically active</li>
-    <li>My Cat
-    <ul>
-        <li>Italo</li>
-        <li>Balearic Beats</li>
-        <li>80's</li>
-    </ul>
-    </li>
-</ul>
+    <div class="grid-child purple">
+        <img src="https://i.ibb.co/qDVTgpP/image20.png" alt="foto" width="400px" height="400px">
+    </div>
 
+    <div class="grid-child green">
+        <h2><u>Yoann and his</br>Hobbies.</u></h2>
+        <ul>
+            <li>Music
+                <ul>
+                    <li>Italo</li>
+                    <li>Balearic Beats</li>
+                    <li>80's</li>
+                    <li>Deephouse</li>
+                </ul>
+            </li>
+            <li>Politically active</li>
+            <li>My Cat
+                <ul>
+                    <li>Italo</li>
+                    <li>Balearic Beats</li>
+                    <li>80's</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
 
-<h2> You can always count on me when... </h2>
+</div>
+
+<div class="table">
+    <table>
+        <table style="width:700px">
+            <tr>
+                <th>Birthday</th>
+                <th>Gender</th>
+                <th>Favourite colour</th>
+                <th>Favourite colour</th>
+                <th>Pineapple on pizza</th>
+            </tr>
+            <tr>
+                <td>12/02</td>
+                <td>Male</td>
+                <td>Royal Blue</td>
+                <td>Italian</td>
+                <td>No Way</td>
+            </tr>
+        </table>
+</div>
+
+<div class="text">
+    <h2><u> You can always count on me when... </u></h2>
 <p> you need some advice and help with all what breaths Adobe CC, Powerpoint, Keynote, etc </p>
-
-<h2> A funny story </h2>
+<h2><u> A funny story </u></h2>
 <p> A few years ago I went to New York with my best friend. What a great diverse city that is. <br/>
     We clearly saw that when we got invites for a cool rooftop party full of fashionably and hip people. <br/>
     We were so amazed by the party that we decided to go back to that club the night after. Looks like <br/>
     this wasn't a good idea since we actually ended up strumbling on a night full of naked men - <br/>
     you get the picture right? </p>
 
-<h5>TL;DR</h5>
+<h5><u>TL;DR</u></h5>
 <p>One party is clearly not the other party!
 </p>
+</div>
 
-<a href="google.com">Previous</a> - YOANN - <a href="google.com">Next</a>
+<div class="links">
+    <a href="google.com">WALI</a> - YOANN - <a href="google.com">YUNES</a>
+</div>
 
 </body>
 </html>
